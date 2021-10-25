@@ -1,38 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .App {
+  margin: 0 auto;
+}
+/* Navigation or Menu */
+.menu {
+  background-color: #ff8e71;
+  height: 60px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  background-color: #ff8e71;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu h2 {
+  font-size: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title {
+  margin-bottom: 8px;
+}
+.container {
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: auto;
+  align-items: center;
+}
+.container-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 180px;
+}
+
+.container-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px;
+  margin-top: 8px;
+}
+input {
+  width: 500px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #faa380;
+  outline: none;
+  font-style: normal;
+  font-weight: 600;
+}
+
+input:focus {
+  border: 1px solid #ff4800;
+}
+
+.btn {
+  cursor: pointer;
+  width: 10%;
+  margin-top: 5px;
+  justify-content: flex-start;
+  padding: 7px 9px;
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  justify-content: center;
+  display: flex;
+  border: 1px solid #ff8e71;
+  background-color: #ff8e71;
+  color: #6e06b3;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Conatct List */
+
+li {
+  list-style: none;
+}
+.contact-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 36.8%;
+}
+
+.contact-list h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #00a6fb;
+}
+
+.continer-inform {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ff8e71;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  padding: 3px 10px;
+  box-shadow: 3px 0 3px #f1670a;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+}
+
+.left-inform {
+  display: flex;
+}
+
+.person-image {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  justify-content: center;
+}
+
+.person-name {
+  color: #ff5100;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.person-email {
+  color: #f1670a;
+}
+
+.trash {
+  color: #00a6fb;
+  transition: transform 0.3s;
+}
+
+.trash:hover {
+  cursor: pointer;
+  transform: scale(1.4);
+  transition: transform 0.3s;
+}
+
+.right-inform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-edit {
+  cursor: pointer;
+  padding: 2px 4px;
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  justify-content: center;
+  display: flex;
+  border: none;
+  background-color: #00a6fb;
   color: white;
+  border-radius: 4px;
+  outline: none;
+  margin-right: 7px;
 }
 
-.App-link {
-  color: #61dafb;
+/* search input */
+
+.titles {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-input {
+  width: 60%;
+  padding: 9px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-add-more {
+  margin-bottom: 5px;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
